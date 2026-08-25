@@ -15,7 +15,7 @@ console.log("Type of employeeJoiningdata -"+typeof employeeJoiningdata);
 
 const x = 10; 
 { 
-var x = 20; kj
+var x = 20; 
 } 
 console.log(x); 
 
