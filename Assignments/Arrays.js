@@ -196,6 +196,14 @@ console.log(arr1);
 // 2. Remove the first task  
 // 3. Reverse all tasks  
 // 4. Display all tasks in a single string separated by " -> " 
+let arr = ["Wake Up","Exercise","Study"]
+console.log(arr);
+arr.unshift("Meeting")
+console.log(arr);
+arr.reverse()
+console.log(arr);
+let arr1 = arr.join("->")
+console.log(arr1);
 
 // 13. Mobile Contacts List 
 // Scenario: 
@@ -204,7 +212,16 @@ console.log(arr1);
 // Declare an array with "Ram", "Shyam", "Mohan" and: 
 // 1. Add "Sita" at the beginning  
 // 2. Remove the last contact  
-// 3. Extract only the first 2 contacts  
+// 3. Extract only the first 2 contacts 
+
+let arr =["Ram", "Shyam", "Mohan"]
+console.log(arr);
+arr.unshift("Sita")
+console.log(arr);
+arr.pop()
+console.log(arr);
+arr.splice(0,1)
+console.log(arr);
 
 // 14. Sports Team Selection 
 // Scenario: 
@@ -213,7 +230,15 @@ console.log(arr1);
 // Declare an array with "Virat", "Rohit", "Gill" and: 
 // 1. Add "Hardik" to the team  
 // 2. Replace "Gill" with "KL Rahul"  
-// 3. Display players in reverse order  
+// 3. Display players in reverse order 
+
+let teamIndia = ["Virat", "Rohit", "Gill"]
+console.log(teamIndia);
+teamIndia.push("Hardik")
+console.log(teamIndia);
+teamIndia.splice(1,2,"KL Rahul")
+console.log(teamIndia);
+
 
 // 15. Real-Time Automation Framework Scenario 
 // Scenario: 
@@ -226,3 +251,16 @@ console.log(arr1);
 // 4. Extract only the first 2 failed tests  
 // 5. Replace "CheckoutFail" with "PaymentFail"  
 // 6. Convert all failures into a single comma-separated string
+
+let arr = ["LoginFail", "CheckoutFail", "SearchFail"]
+arr.push("ProfileFail")
+console.log(arr);
+arr.shift()
+console.log(arr);
+let [...arr1] = arr
+console.log(arr1);
+arr1.splice(2,1)
+console.log(arr1);
+arr1.splice(0,1,"PaymentFail")
+console.log(arr1);
+console.log(arr1.join());
